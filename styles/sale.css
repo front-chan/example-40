@@ -1,0 +1,80 @@
+.count-clock {
+  background-color: rgb(231, 241, 253);
+  max-width: 800px;
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  border-radius: 10px;
+}
+.macbook-img {
+  max-width: 300px;
+  width: 95%;
+  margin: 30px 30px 30px 15px;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  max-width: 440px;
+  width: 95%;
+}
+.text-box > h2 {
+  margin: 10px 0 0 0;
+}
+.text-box > h4 {
+  margin: 0 0 15px 0;
+}
+.lorem-text {
+  font-size: 12px;
+  color: rgb(175, 174, 174);
+}
+.time-section {
+  display: flex;
+  justify-content: flex-start;
+}
+.time-box {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  background-color: rgb(2, 2, 104);
+  color: white;
+  margin-right: 15px;
+  padding: 2px;
+}
+.time-box > p {
+  margin: 0;
+  text-align: center;
+}
+.time-text {
+  font-size: 30px;
+}
+.btn {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 30px;
+}
+.purchase-btn {
+  padding: 5px;
+  background-color: rgb(2, 2, 104);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.purchase-btn:hover {
+  background-color: rgb(2, 2, 174);
+}
+
+@media (max-width: 768px) {
+  .count-clock {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .macbook-img {
+    margin: 30px auto;
+  }
+  .text-box {
+    margin: 30px auto;
+  }
+}
