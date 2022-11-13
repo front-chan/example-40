@@ -4,6 +4,7 @@ let month = saleNow.setMonth(10); //11
 let date = saleNow.setDate(30); //30
 let hours = saleNow.setHours(11); //11
 let minutes = saleNow.setMinutes(30); //30
+let seconds = saleNow.setSeconds(59);
 
 let getYear = saleNow.getFullYear();
 let getMonth = saleNow.getMonth();
@@ -77,6 +78,9 @@ const countDown = function () {
     if (saleEnd < 0) {
       clearInterval(countTimer);
       // modal 창 구현 예정
+      endBody.style.display = "flex";
+      endBoxClose.disabled = "true";
+      endText.innerHTML = "Thank You! <br />The event has ended!";
 
       textDays.textContent = 0;
       textHours.textContent = 0;
@@ -98,3 +102,16 @@ const countDown = function () {
 };
 
 countDown();
+
+const purchaseBtn = document.querySelector(".purchase-btn");
+const endBody = document.getElementById("end-body");
+const endBoxClose = document.querySelector(".end-box-close");
+const endText = document.querySelector(".end-text");
+
+purchaseBtn.addEventListener("click", () => {
+  endBody.style.display = "flex";
+});
+
+endBoxClose.addEventListener("click", () => {
+  endBody.style.display = "none";
+});
