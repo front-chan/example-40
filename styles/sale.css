@@ -2,7 +2,7 @@
   background-color: rgb(231, 241, 253);
   max-width: 800px;
   width: 95%;
-  margin: 10px auto;
+  margin: 30px auto;
   display: flex;
   border-radius: 10px;
 }
@@ -69,7 +69,7 @@
   .count-clock {
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .macbook-img {
     margin: 30px auto;
